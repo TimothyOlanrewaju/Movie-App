@@ -143,6 +143,7 @@ ul {
 
 /* Footer */
 .main-footer {
+  border-top: 1px solid var(--color-secondary);
   background: #020d18;
   padding: 20px 0;
   margin-top: 20px;
@@ -155,7 +156,7 @@ ul {
 }
 
 .main-footer .container .logo {
-  color: #fff;
+  color: var(--color-secondary);
   font-size: 25px;
   font-weight: 700;
   text-transform: uppercase;
@@ -334,10 +335,10 @@ section h2 {
   border-radius: 5px;
 }
 
-.alert-success {
+.success {
   background: green;
 }
 
-.alert-error {
+.error {
   background: red;
 }
