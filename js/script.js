@@ -67,6 +67,7 @@ async function fetchPopularMovies(){
 async function displayMovieDetails(){
     const movieId = window.location.search.split('=')[1]
     const movie = await fetchAPIData(`movie/${movieId}`)
+    console.log(movie)
     const div = document.createElement('div')
     div.innerHTML=`
     <div class="details-top">
@@ -289,6 +290,8 @@ function init(){
             break;
         case '/search.html':
           search();
+          displayMovieDetails();
+          displayShowDetails();
           break;
     }
     highlightActiveLink();

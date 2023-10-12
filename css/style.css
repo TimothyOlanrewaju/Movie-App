@@ -216,32 +216,19 @@ section h2 {
   padding: 10px;
 }
 
-/* Movie Details */
-.details-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px 0 30px;
-}
-
 .details-top img {
   width: 400px;
   height: 100%;
   margin-right: 60px;
   object-fit: cover;
 }
-
-.details-top p {
-  margin: 20px 0;
+@media(min-width:700px){
+  .details-top img{
+    width:1200px;
+    height:500px;
+    object-fit:contain;
+  }
 }
-
-.details-top .btn {
-  margin-top: 20px;
-}
-
-.details-bottom {
-}
-
 .details-bottom li {
   margin: 15px 0;
   padding-bottom: 8px;
